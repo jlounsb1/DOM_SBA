@@ -41,8 +41,7 @@ function handleClick(event) {
     walkerInput.reset();
 }
 
-function cacheInput(event) {
-
+function cacheInput() {
 let walkerNameInput =walkerName.value;
 let dateInput = date.value;
 let walkerDistanceInput = walkerDistance.value;
@@ -51,8 +50,10 @@ let walkNotesInput = walkNotes.value;
 let eachWalk={walkNum, walkerNameInput, dateInput, walkerDistanceInput, walkHappinessInput, walkNotesInput}
 console.log(eachWalk)
 radarStats.push(eachWalk)
-}
 console.log(radarStats);
-function updateStats(event) {
+}
+
+
+function updateStats() {
 
 }
