@@ -55,5 +55,9 @@ console.log(radarStats);
 
 
 function updateStats() {
-
+let sum =0;
+for(let i=0; i<radarStats.length;i++) {
+    sum = sum + radarStats[i].walkerDistanceInput;
+}
+totalWalk.textContent = `${sum}`;
 }
