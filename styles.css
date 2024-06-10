@@ -65,3 +65,10 @@ hr {
 input {
     margin-bottom:10px;
 }
+
+#button {
+    padding:5px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
