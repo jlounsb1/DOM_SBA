@@ -13,21 +13,56 @@ body{
     display:flex;
     flex-direction: column;
     background-color: blanchedalmond;
-    margin:100px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:50px;
+    margin-bottom: 50px;
     color:whitesmoke;
     padding:20px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 }
-
+img {
+    border-radius: 20px;
+}
 .flex-item {
     display:flex;
     flex-direction: column;
     background-color: rgb(180, 170, 154);
-    margin:20px;
-    padding:10px;
+    margin:10px;
+    padding:15px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    width:500px;
+}
+.header {
+    margin-left:150px;
+    margin-right:150px;
+    padding-bottom:30px;
+}
+.walk-item {
+    background-color: rgb(150, 142, 128);
+    border-radius:20px;
+    margin:20px;
+    padding:10px;
+    margin-left:0;
+    margin-right:0;
+    width:80%;
+    
+}
+
+hr {
+    width:70%;
+}
+
+#walkerinput {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin:10px;
+}
+input {
+    margin-bottom:10px;
 }
