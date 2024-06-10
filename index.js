@@ -60,10 +60,10 @@ function updateStats() {
 let sum =0;
 let happinessScoreTotal=0;
 for(let i=0; i<radarStats.length;i++) {
-    sum = sum + radarStats[i].walkerDistanceInput;
-    happinessScoreTotal = happinessScoreTotal+radarStats[i].walkHappinessInput;
+    sum = sum + Number(radarStats[i].walkerDistanceInput);
+    happinessScoreTotal = happinessScoreTotal+Number(radarStats[i].walkHappinessInput);
 }
-let happinessavg = Math.round(happinessScoreTotal/(radarStats.length*10)*10)
+let happinessavg = Math.round((happinessScoreTotal/(radarStats.length*10))*10)
 totalWalk.textContent = `${sum}`;
 average.textContent =`${happinessavg}`;
 lastWalk.textContent = `${date.value}`
