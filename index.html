@@ -32,7 +32,13 @@
             <h3>Enter your walk here:</h3>
             <form id="walkerinput">
                 <label for="walkername">Walker name:</label>
-                <input type="text" placeholder="Name" name="walkername" required>
+                <select name="walkername" id="walkername" required>
+                        <option value="Dad">Dad</option>
+                        <option value="Nana">Nana</option>
+                        <option value="Grampa">Grampa</option>
+                        <option value="Molly">Molly</option>
+                        <option value="Rufus">Rufus</option>
+                </select>
                 <label for="walkerdistance" >Walk distance</label>
                 <input type="number" min="1" placeholder="approx. in miles" name="walkerdistance">
                 <label for="happiness" >Radar Happiness on walk:</label>
