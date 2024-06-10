@@ -35,6 +35,7 @@ function handleClick(event) {
     div.classList.add('walk-item');
     div.innerHTML = `<h3>Walk: ${walkNum}</h3><p>Walked by: <span>${walkerName.value}</span></p><p>Date and Time: <span>${date.value}</span></p><p>Total Distance: <span>${walkerDistance.value}</span> Miles</p><p>Happiness Level: <span>${walkHappiness.value}</span></p><p>Notes:</p><p>${walkNotes.value}</p>`
     walksId.appendChild(div)
+    
     cacheInput();
     updateStats()
     walkerInput.reset();
@@ -42,8 +43,16 @@ function handleClick(event) {
 
 function cacheInput(event) {
 
+let walkerNameInput =walkerName.value;
+let dateInput = date.value;
+let walkerDistanceInput = walkerDistance.value;
+let walkHappinessInput = walkHappiness.value;
+let walkNotesInput = walkNotes.value;
+let eachWalk={walkNum, walkerNameInput, dateInput, walkerDistanceInput, walkHappinessInput, walkNotesInput}
+console.log(eachWalk)
+radarStats.push(eachWalk)
 }
-
+console.log(radarStats);
 function updateStats(event) {
 
 }
