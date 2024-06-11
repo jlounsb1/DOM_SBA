@@ -67,8 +67,19 @@ input {
 }
 
 #button {
-    padding:5px;
-    margin-left:40px;
-    margin-right:40px;
+    margin-left:50px;
+    margin-right:50px;
 }
 
+button, #button {
+    padding:20px;
+    border-radius: 50px;
+    border:1px solid darkslategrey;
+}
+button:hover, #button:hover {
+    opacity:50%;
+    background-color: cadetblue;
+    color:white;
+    border:1px solid white;
+    cursor: pointer;
+}

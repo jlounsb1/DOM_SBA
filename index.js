@@ -76,3 +76,6 @@ mostFrequent.textContent = `${walkerName.value}`
 //maybe like a cheeky give treats button with a counter?
 
 //Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
+
+//I could put a button on the very bottom of my page, and use it as a jump to top, then add a listener to firstChild of my first section or something?
+
