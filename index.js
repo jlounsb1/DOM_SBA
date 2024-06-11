@@ -58,15 +58,21 @@ radarStats.push(eachWalk)
 
 
 function updateStats() {
+let noData = 0;
 let sum =0;
 let happinessScoreTotal=0;
 for(let i=0; i<radarStats.length;i++) {
     sum = sum + Number(radarStats[i].walkerDistanceInput);
+    if(radarStats[i].walkHappinessInput>0) {
     happinessScoreTotal = happinessScoreTotal+Number(radarStats[i].walkHappinessInput);
+    }else {
+        noData= noData-1;
+        //happiness not required to input, but if it is left blank, it should not be included in average. caclulation adjusted below as well.
+    }
 }
-let happinessavg = Math.round((happinessScoreTotal/(radarStats.length*10))*10)
+let happinessavg = Math.round((happinessScoreTotal/((radarStats.length+noData)*10))*10)
 totalWalk.textContent = `${sum}`;
-average.textContent =`${happinessavg}`;
+if(happinessScoreTotal&&radarStats.length+noData>0){average.textContent =`${happinessavg}`;} else{average.textContent =`Not enough info yet`;}
 lastWalk.textContent = `${date.value}`
 mostFrequent.textContent = `${walkerName.value}`
 }
