@@ -20,8 +20,8 @@ const mostFrequent = document.getElementById('mostfrequent');
 
 let radarStats = [];
 let walkNum =0;
-const theMoment = (new Date()).getTime()+1000;
-
+const theMoment = (new Date()).getTime()+1000000;
+//added extra time since the page doesnt refresh when info entered, the input will grow but this won't so I have to counteract that with some buffer time.
 
 walkerInput.addEventListener('submit', handleClick);
 
@@ -42,7 +42,7 @@ function handleClick(event) {
 function cacheInput() {
 let walkerNameInput =walkerName.value;
 let dateInput = date.value;
-let walkMoment =new Date(dateInput).getTime();
+let walkMoment =(new Date(dateInput).getTime());
 let walkerDistanceInput = walkerDistance.value;
 let walkHappinessInput = walkHappiness.value;
 let walkNotesInput = walkNotes.value;
@@ -67,7 +67,7 @@ let happinessavg = Math.round((happinessScoreTotal/(radarStats.length*10))*10)
 totalWalk.textContent = `${sum}`;
 average.textContent =`${happinessavg}`;
 lastWalk.textContent = `${date.value}`
-mostFrequent.textContent = `${walkerName.value}Still need to put in logic`
+mostFrequent.textContent = `${walkerName.value}`
 }
 
 
