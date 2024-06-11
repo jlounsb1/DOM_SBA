@@ -20,7 +20,7 @@ const mostFrequent = document.getElementById('mostfrequent');
 
 let radarStats = [];
 let walkNum =0;
-const theMoment = (new Date()).getTime()
+const theMoment = (new Date()).getTime()+1000;
 
 
 walkerInput.addEventListener('submit', handleClick);
@@ -67,8 +67,9 @@ let happinessavg = Math.round((happinessScoreTotal/(radarStats.length*10))*10)
 totalWalk.textContent = `${sum}`;
 average.textContent =`${happinessavg}`;
 lastWalk.textContent = `${date.value}`
-mostFrequent.textContent = `${walkerName.value}`
+mostFrequent.textContent = `${walkerName.value}Still need to put in logic`
 }
 
 
 //i still need to add another even listener to get credit for that part of the assignment.
+//maybe like a cheeky give treats button with a counter?
