@@ -8,7 +8,6 @@ body{
    padding:0px;
    margin:0;
 }
-
 #app {
     display:flex;
     flex-direction: column;
@@ -51,11 +50,9 @@ img {
     margin-right:0;
     width:80%;
 }
-
 hr {
     width:70%;
 }
-
 #walkerinput {
     display: flex;
     flex-direction: column;
