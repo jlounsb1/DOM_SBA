@@ -86,3 +86,6 @@ button:hover, #button:hover {
     border:2px solid white;
     cursor: pointer;
 }
+.hidden{
+    display:none;
+}

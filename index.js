@@ -38,6 +38,8 @@ function handleClick(event) {
   
     walkerInput.reset();
     window.alert("Thank you for Submitting your walk with Mr. Radar. I'm sure he appreciated it.");
+    walks.classList.remove('hidden');
+    toStatsBtn.classList.remove('hidden');
 }
 
 function cacheInput() {
