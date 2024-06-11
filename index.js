@@ -70,6 +70,9 @@ lastWalk.textContent = `${date.value}`
 mostFrequent.textContent = `${walkerName.value}`
 }
 
+//These are the additional requirements I still need to do.
 
 //i still need to add another even listener to get credit for that part of the assignment.
 //maybe like a cheeky give treats button with a counter?
+
+//Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
