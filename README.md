@@ -6,8 +6,9 @@
 
 <p>This was a simple exercise to demonstrate DOM manipulation, form validation, event listeners, and data manipulation.</p>
 
-<footer>Author:</footer>
-<footer>Jeff Lounsbury</footer>
+
+<p>Author:</p>
+<p>Jeff Lounsbury</p>
 
 
-<footer>Credit to Mr. Radar for the inspiration.</footer>
+<p>Credit to Mr. Radar for the inspiration.</p>
