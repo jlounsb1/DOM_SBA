@@ -16,7 +16,7 @@ const lastWalk = document.getElementById('lastwalk');
 const totalWalk = document.getElementById('totalwalk');
 const average = document.getElementById('average');
 const mostFrequent = document.getElementById('mostfrequent');
-
+const toStatsBtn = document.getElementById('topbtn');
 
 let radarStats = [];
 let walkNum =0;
@@ -24,6 +24,7 @@ const theMoment = (new Date()).getTime()+1000000;
 //added extra time since the page doesnt refresh when info entered, the input will grow but this won't so I have to counteract that with some buffer time.
 
 walkerInput.addEventListener('submit', handleClick);
+toStatsBtn.addEventListener('click', toStats)
 
 function handleClick(event) {
     event.preventDefault();
@@ -70,12 +71,10 @@ lastWalk.textContent = `${date.value}`
 mostFrequent.textContent = `${walkerName.value}`
 }
 
-//These are the additional requirements I still need to do.
 
-//i still need to add another even listener to get credit for that part of the assignment.
-//maybe like a cheeky give treats button with a counter?
-
-//Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
-
-//I could put a button on the very bottom of my page, and use it as a jump to top, then add a listener to firstChild of my first section or something?
-
+function toStats(event) {
+ lastWalk.parentNode.scrollIntoView({behavior: 'smooth'})
+ //I could have just jumped to the top of the div, but I wanted to hit one of the requirements to use a parent-child relationship
+ //found the scrollIntoView method to do this easily on stack Overflow, wanted to cite my source.
+ //https://stackoverflow.com/questions/3569329/javascript-to-make-the-page-jump-to-a-specific-location
+}
