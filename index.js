@@ -33,7 +33,7 @@ function handleClick(event) {
     updateStats();
     let div = document.createElement('div');
     div.classList.add('walk-item');
-    div.innerHTML = `<h3>Walk: ${walkNum}</h3><p>Walked by: <span>${walkerName.value}</span></p><p>Date and Time: <span>${date.value}</span></p><p>Total Distance: <span>${walkerDistance.value}</span> Miles</p><p>Happiness Level: <span>${walkHappiness.value}</span></p><p>Notes:</p><p>${walkNotes.value}</p>`
+    div.innerHTML = `<h3>Walk: ${walkNum}</h3><p>Walked by: <span>${walkerName.value}</span></p><p>Date and Time: <span>${date.value}</span></p><p>Total Distance: <span>${walkerDistance.value}</span> Meters</p><p>Happiness Level: <span>${walkHappiness.value}</span></p><p>Notes:</p><p>${walkNotes.value}</p>`
     walksId.appendChild(div)
   
     walkerInput.reset();

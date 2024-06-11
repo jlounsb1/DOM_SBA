@@ -17,7 +17,7 @@ body{
     margin-right:100px;
     margin-top:50px;
     margin-bottom: 50px;
-    color:whitesmoke;
+    color:rgb(234, 233, 233);
     padding:20px;
     justify-content: center;
     align-items: center;
@@ -67,19 +67,22 @@ input {
 }
 
 #button {
-    margin-left:50px;
-    margin-right:50px;
+    margin-left:70px;
+    margin-right:70px;
 }
 
 button, #button {
     padding:20px;
     border-radius: 50px;
-    border:1px solid darkslategrey;
+    border:2px solid grey;
+    color:darkslategray;
+    font-size: .75rem;
+    font-weight: bold;
 }
 button:hover, #button:hover {
     opacity:50%;
     background-color: cadetblue;
     color:white;
-    border:1px solid white;
+    border:2px solid white;
     cursor: pointer;
 }

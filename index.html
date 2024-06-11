@@ -18,7 +18,7 @@
                 <span>Last Walk:</span>
                 <span id ="lastwalk">Input Your Walk to see</span> 
                 <hr> 
-                <span>Total Distance:</span>
+                <span>Total Distance (in meters):</span>
                 <span id ="totalwalk">He's going to be mad if it's not a lot!</span>
                 <hr>
                 <span>Average Happiness:</span>
@@ -40,11 +40,11 @@
                         <option value="Rufus">Rufus</option>
                 </select>
                 <label for="walkerdistance" >Walk distance</label>
-                <input type="number" min="1" placeholder="approx. in miles" name="walkerdistance">
+                <input type="number" min="1" placeholder="approx. in meters" name="walkerdistance" required>
                 <label for="happiness" >Radar Happiness on walk:</label>
                 <input type="number" min="1" max="10" placeholder="1-10, 10 being best" name="happiness">
                 <label for="date">Date and Time of walk:</label>
-                <input type="datetime-local" name="date">
+                <input type="datetime-local" name="date" required>
                 <label for="notes" >Additional Notes:</label>
                 <textarea rows="5" col="10" name="notes"placeholder="if you have any additional notes, please add them here"></textarea>
                 <label for="responsible">I agree to walk Radar responsibly.</label>
