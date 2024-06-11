@@ -31,6 +31,7 @@
         <div class='signup flex-item'>
             <h3>Enter your walk here:</h3>
             <form id="walkerinput">
+                <div class="manualinput">
                 <label for="walkername">Walker name:</label>
                 <select name="walkername" id="walkername" required>
                         <option value="Dad">Dad</option>
@@ -45,12 +46,16 @@
                 <input type="number" min="1" max="10" placeholder="1-10, 10 being best" name="happiness">
                 <label for="date">Date and Time of walk:</label>
                 <input type="datetime-local" name="date" required>
+                <hr style="width:100%">
+                </div>
                 <label for="notes" >Additional Notes:</label>
                 <textarea rows="5" col="10" name="notes"placeholder="if you have any additional notes, please add them here"></textarea>
                 <label for="responsible">I agree to walk Radar responsibly.</label>
                 <input type="checkbox" name='responsible'required>
                 <br>
+                <div class="manualcenter">
                 <input id="button" type="submit" value ='Submit'>
+                </div>
             </form>
         </div>
         <div id ="walks" class="walks hidden flex-item">

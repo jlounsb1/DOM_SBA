@@ -61,16 +61,25 @@ hr {
     flex-direction: column;
     padding:20px;
     margin:10px;
+    width:70%;
 }
 input {
     margin-bottom:10px;
 }
-
-#button {
-    margin-left:70px;
-    margin-right:70px;
+.manualinput {
+    width:60%;
+    display:flex;
+    flex-direction: column;
 }
-
+#button {
+    width:25%; 
+}
+.manualcenter {
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
 button, #button {
     padding:20px;
     border-radius: 50px;
